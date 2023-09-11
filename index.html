@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amba digital clock project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="icon" type="image/x-icon" href="images/fav.png">
+</head>
+<body>
+
+    <div class="mark">
+        <div class="info">
+            <h1>A Digital Real-Time Clock</h1><br>
+            <p>Experience real-time interactivity with my Digital Clock Web Application, showcasing proficiency in HTML, CSS, and JavaScript. This project demonstrates precise timekeeping accuracy, sleek UI/UX design, and seamless functionality. Leveraging fundamental web technologies, I engineered a dynamic clock that updates in real-time, offering an engaging user experience. This project exemplifies my proficiency in front-end development, highlighting my ability to combine creativity with technical expertise. Explore this clock and other impressive projects in my portfolio to witness my dedication to crafting intuitive, visually appealing web applications.</p>
+        </div>
+        <div class="container">
+            <div class="clock">
+                <span id="hrs">00</span>
+                <span>:</span>
+                <span id="min">00</span>
+                <span>:</span>
+                <span id="sec">00</span>
+            </div>
+        </div>
+        <div class="social-menu">
+            <ul>
+              <li><a href="https://ambabrian.github.io/Official-Website/" title="Visit my Personal Portfolio"><i class="fa-solid fa-blog"></i></a></li>
+              <li><a href="https://github.com/AmbaBrian" title="See my github projects"><i class="fa-brands fa-github"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/brianamba" title="See my linkedin Profile"><i class="fa-brands fa-linkedin-in"></i></a></li>
+              <li><a href="https://twitter.com/ambabrian6" title="Reach me on Twitter"><i class="fa-brands fa-x-twitter"></i></a></li>
+              <li><a href="https://wa.me/254743169131" title="WhatsApp me"><i class="fa-brands fa-whatsapp"></i></a></li>
+              <li><a href="https://www.facebook.com/amba.ebrians.5" title="Reach me on facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+            </ul>
+        </div>
+    
+    </div>
+    <script>
+        let hrs = document. getElementById("hrs");
+        let min = document. getElementById("min");
+        let sec = document. getElementById("sec");
+
+setInterval(()=>{
+
+        let currentTime = new Date ();
+
+        hrs.innerHTML = (currentTime.getHours ()<10?"0":"") + currentTime.getHours ();
+        min.innerHTML = (currentTime.getMinutes ()<10?"0":"") + currentTime.getMinutes ();
+        sec.innerHTML = (currentTime.getSeconds ()<10?"0":"") + currentTime.getSeconds ();
+}, 1000)
+    </script>
+    <footer>
+        <span>
+          <a href="#"> Amba Brian Okoth</a> | <span class="far fa-copyright"></span> August 2023 │ All Rights Reserved.│ Privacy Policy
+        </span>
+      </footer>
+</body>
+</html>
