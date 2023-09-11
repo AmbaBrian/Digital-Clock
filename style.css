@@ -8,7 +8,7 @@
     width: 100%;
     min-height: 100vh;
     background: #1A2238;
-    color: #bd1e51;
+    color: #9daaf2;
     position: relative;
 }
 .info h1{
@@ -64,7 +64,7 @@
     content: '';
     width: 180px;
     height: 180px;
-    background: #D76F30;
+    background: #f41b75;
     border-radius: 50%;
     position: absolute;
     left: -50px;
@@ -75,7 +75,7 @@
     content: '';
     width: 180px;
     height: 180px;
-    background: #172d13;
+    background: #419aff;
     border-radius: 50%;
     position: absolute;
     right: -30px;
